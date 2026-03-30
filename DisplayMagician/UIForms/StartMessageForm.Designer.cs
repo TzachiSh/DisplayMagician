@@ -41,7 +41,7 @@ namespace DisplayMagician.UIForms
             // 
             lbl_heading_text.AutoSize = true;
             lbl_heading_text.BackColor = System.Drawing.Color.Black;
-            lbl_heading_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_heading_text.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_heading_text.ForeColor = System.Drawing.Color.White;
             lbl_heading_text.Location = new System.Drawing.Point(510, 22);
             lbl_heading_text.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -100,7 +100,7 @@ namespace DisplayMagician.UIForms
             BackColor = System.Drawing.Color.Black;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1486, 974);
+            ClientSize = new System.Drawing.Size(1000, 700);
             Controls.Add(pnl_richtextbox);
             Controls.Add(btn_back);
             Controls.Add(lbl_heading_text);

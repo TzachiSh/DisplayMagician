@@ -179,7 +179,7 @@ namespace DisplayMagician.UIForms
             btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_save.ForeColor = System.Drawing.Color.White;
             btn_save.Location = new System.Drawing.Point(654, 928);
             btn_save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -293,7 +293,7 @@ namespace DisplayMagician.UIForms
             dv_profile.BackColor = System.Drawing.Color.DimGray;
             dv_profile.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             dv_profile.Dock = System.Windows.Forms.DockStyle.Top;
-            dv_profile.Font = new System.Drawing.Font("Consolas", 50F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            dv_profile.Font = new System.Drawing.Font("Consolas", 28F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             dv_profile.ForeColor = System.Drawing.Color.MidnightBlue;
             dv_profile.Location = new System.Drawing.Point(0, 0);
             dv_profile.Margin = new System.Windows.Forms.Padding(21);
@@ -333,7 +333,7 @@ namespace DisplayMagician.UIForms
             // 
             lbl_profile_shown.AutoSize = true;
             lbl_profile_shown.BackColor = System.Drawing.Color.DimGray;
-            lbl_profile_shown.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_profile_shown.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_profile_shown.ForeColor = System.Drawing.Color.White;
             lbl_profile_shown.Location = new System.Drawing.Point(4, 30);
             lbl_profile_shown.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -777,7 +777,7 @@ namespace DisplayMagician.UIForms
             btn_add_new_start_program.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_add_new_start_program.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_add_new_start_program.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_add_new_start_program.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn_add_new_start_program.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btn_add_new_start_program.ForeColor = System.Drawing.Color.White;
             btn_add_new_start_program.Location = new System.Drawing.Point(485, 73);
             btn_add_new_start_program.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1640,7 +1640,7 @@ namespace DisplayMagician.UIForms
             // txt_shortcut_save_name
             // 
             txt_shortcut_save_name.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
-            txt_shortcut_save_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            txt_shortcut_save_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             txt_shortcut_save_name.Location = new System.Drawing.Point(241, 876);
             txt_shortcut_save_name.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             txt_shortcut_save_name.MaxLength = 200;
@@ -1653,7 +1653,7 @@ namespace DisplayMagician.UIForms
             // lbl_title
             // 
             lbl_title.AutoSize = true;
-            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_title.ForeColor = System.Drawing.Color.White;
             lbl_title.Location = new System.Drawing.Point(449, 16);
             lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1666,7 +1666,7 @@ namespace DisplayMagician.UIForms
             // 
             lbl_shortcut_name.Anchor = System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right;
             lbl_shortcut_name.AutoSize = true;
-            lbl_shortcut_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_shortcut_name.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_shortcut_name.ForeColor = System.Drawing.Color.Transparent;
             lbl_shortcut_name.Location = new System.Drawing.Point(27, 879);
             lbl_shortcut_name.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -1696,7 +1696,7 @@ namespace DisplayMagician.UIForms
             btn_hotkey.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_hotkey.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_hotkey.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_hotkey.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_hotkey.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_hotkey.ForeColor = System.Drawing.Color.White;
             btn_hotkey.Location = new System.Drawing.Point(507, 928);
             btn_hotkey.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -1747,7 +1747,7 @@ namespace DisplayMagician.UIForms
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
             CancelButton = btn_cancel;
-            ClientSize = new System.Drawing.Size(1300, 979);
+            ClientSize = new System.Drawing.Size(900, 700);
             Controls.Add(btn_help);
             Controls.Add(lbl_hotkey_assigned);
             Controls.Add(btn_hotkey);

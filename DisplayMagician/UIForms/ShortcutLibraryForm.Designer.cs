@@ -83,7 +83,7 @@
             btn_delete.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_delete.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_delete.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_delete.ForeColor = System.Drawing.Color.White;
             btn_delete.Location = new System.Drawing.Point(440, 742);
             btn_delete.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -118,7 +118,7 @@
             btn_run.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_run.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_run.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_run.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_run.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_run.ForeColor = System.Drawing.Color.White;
             btn_run.Location = new System.Drawing.Point(734, 742);
             btn_run.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -136,7 +136,7 @@
             btn_edit.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_edit.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_edit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_edit.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_edit.ForeColor = System.Drawing.Color.White;
             btn_edit.Location = new System.Drawing.Point(293, 742);
             btn_edit.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -154,7 +154,7 @@
             btn_new.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_new.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_new.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_new.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_new.ForeColor = System.Drawing.Color.White;
             btn_new.Location = new System.Drawing.Point(146, 742);
             btn_new.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -172,7 +172,7 @@
             btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_save.ForeColor = System.Drawing.Color.White;
             btn_save.Location = new System.Drawing.Point(881, 742);
             btn_save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -194,7 +194,7 @@
             // 
             label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             label1.AutoSize = true;
-            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             label1.ForeColor = System.Drawing.Color.White;
             label1.Location = new System.Drawing.Point(475, 38);
             label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -325,7 +325,7 @@
             btn_copy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_copy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_copy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_copy.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_copy.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_copy.ForeColor = System.Drawing.Color.White;
             btn_copy.Location = new System.Drawing.Point(587, 742);
             btn_copy.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -344,7 +344,7 @@
             btn_cancel.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_cancel.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_cancel.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn_cancel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btn_cancel.ForeColor = System.Drawing.Color.White;
             btn_cancel.Location = new System.Drawing.Point(587, 563);
             btn_cancel.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -363,7 +363,7 @@
             BackColor = System.Drawing.Color.Black;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1323, 826);
+            ClientSize = new System.Drawing.Size(900, 650);
             Controls.Add(btn_cancel);
             Controls.Add(btn_copy);
             Controls.Add(btn_donate);

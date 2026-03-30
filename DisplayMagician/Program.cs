@@ -249,6 +249,7 @@ namespace DisplayMagician {
             RegisterDisplayMagicianWithWindows();
 
             logger.Trace($"Program/Main: Setting visual styles and rendering mode");
+            Application.SetHighDpiMode(HighDpiMode.DpiUnaware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
@@ -844,7 +845,14 @@ namespace DisplayMagician {
 
             logger.Trace($"Program/Main: Clearing all previous windows toast notifications as they aren't needed any longer");
             // Remove all the notifications we have set as they don't matter now!
-            ToastNotificationManagerCompat.History.Clear();
+            try
+            {
+                ToastNotificationManagerCompat.History.Clear();
+            }
+            catch (Exception ex)
+            {
+                logger.Warn(ex, $"Program/Main: Toast notification platform unavailable, skipping notification cleanup.");
+            }
 
             // Shutdown NLog
             logger.Trace($"Program/Main: Stopping logging processes");

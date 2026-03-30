@@ -166,7 +166,7 @@ namespace DisplayMagician.UIForms
             // 
             // lbl_priority
             // 
-            this.lbl_priority.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl_priority.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lbl_priority.Location = new System.Drawing.Point(35, 59);
             this.lbl_priority.Name = "lbl_priority";
             this.lbl_priority.Size = new System.Drawing.Size(55, 23);

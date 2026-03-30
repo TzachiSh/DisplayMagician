@@ -48,7 +48,7 @@ namespace DisplayMagician.UIForms
             btn_select_app.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             btn_select_app.Enabled = false;
             btn_select_app.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_select_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_select_app.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_select_app.ForeColor = System.Drawing.Color.White;
             btn_select_app.Location = new System.Drawing.Point(196, 584);
             btn_select_app.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -82,7 +82,7 @@ namespace DisplayMagician.UIForms
             // 
             lbl_title.Anchor = System.Windows.Forms.AnchorStyles.Top;
             lbl_title.AutoSize = true;
-            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_title.ForeColor = System.Drawing.Color.White;
             lbl_title.Location = new System.Drawing.Point(531, 22);
             lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -122,7 +122,7 @@ namespace DisplayMagician.UIForms
             // 
             btn_select_exe.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             btn_select_exe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_select_exe.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_select_exe.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_select_exe.ForeColor = System.Drawing.Color.White;
             btn_select_exe.Location = new System.Drawing.Point(85, 201);
             btn_select_exe.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -138,7 +138,7 @@ namespace DisplayMagician.UIForms
             lbl_or.Anchor = System.Windows.Forms.AnchorStyles.Top;
             lbl_or.AutoSize = true;
             lbl_or.BackColor = System.Drawing.Color.Black;
-            lbl_or.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_or.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0);
             lbl_or.ForeColor = System.Drawing.Color.White;
             lbl_or.Location = new System.Drawing.Point(786, 337);
             lbl_or.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -183,7 +183,7 @@ namespace DisplayMagician.UIForms
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
-            ClientSize = new System.Drawing.Size(1498, 657);
+            ClientSize = new System.Drawing.Size(1000, 550);
             Controls.Add(btn_back);
             Controls.Add(ilv_installed_apps);
             Controls.Add(lbl_or);

@@ -87,13 +87,15 @@ namespace DisplayMagicianShared
         private static bool _userChangingProfiles = false;
 
         // Other constants that are useful
-        public static string AppDataPath = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DisplayMagician");
+        // AppDataPath can be overridden via DISPLAYMAGICIAN_DATA_PATH env var for shared/multi-user setups
+        public static string AppDataPath = Environment.GetEnvironmentVariable("DISPLAYMAGICIAN_DATA_PATH")
+            ?? System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "DisplayMagician");
         public static string AppIconPath = System.IO.Path.Combine(AppDataPath, $"Icons");
         public static string AppDisplayMagicianIconFilename = System.IO.Path.Combine(AppIconPath, @"DisplayMagician.ico");
-        private static readonly string AppProfileStoragePath = System.IO.Path.Combine(AppDataPath, $"Profiles");
+        private static string AppProfileStoragePath = System.IO.Path.Combine(AppDataPath, $"Profiles");
         private static string _profileFileVersion = "3";
-        private static readonly string _profileStorageJsonFileName = "DisplayProfiles.json";
-        private static readonly string _profileStorageJsonFullFileName = System.IO.Path.Combine(AppProfileStoragePath, _profileStorageJsonFileName);
+        private static string _profileStorageJsonFileName = "DisplayProfiles.json";
+        private static string _profileStorageJsonFullFileName = System.IO.Path.Combine(AppProfileStoragePath, _profileStorageJsonFileName);
 
         #endregion
 
@@ -888,7 +890,10 @@ namespace DisplayMagicianShared
                             ObjectCreationHandling = ObjectCreationHandling.Replace,
                             Error = delegate (object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
                             {
-                                jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message} | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}");
+                                string innerMsg = args.ErrorContext.Error.InnerException != null
+                                    ? $" | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}"
+                                    : "";
+                                jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message}{innerMsg}");
                                 args.ErrorContext.Handled = true;
                             },
                         };
@@ -936,15 +941,25 @@ namespace DisplayMagicianShared
                                 ObjectCreationHandling = ObjectCreationHandling.Replace,
                                 Error = delegate (object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
                                 {
-                                    jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message} | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}");
+                                    string innerMsg = args.ErrorContext.Error.InnerException != null
+                                        ? $" | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}"
+                                        : "";
+                                    jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message}{innerMsg}");
                                     args.ErrorContext.Handled = true;
                                 },
                             };
 
                             _allProfiles = JsonConvert.DeserializeObject<List<ProfileItem>>(json, mySerializerSettings);
 
-                            // Save the Profiles JSON as it's different now, and we want to save the upgrade!
-                            SaveProfiles();
+                            if (_allProfiles != null && _allProfiles.Count > 0)
+                            {
+                                // Save the Profiles JSON as it's different now, and we want to save the upgrade!
+                                SaveProfiles();
+                            }
+                            else
+                            {
+                                _allProfiles = new List<ProfileItem>();
+                            }
 
                             // We have to patch the adapter IDs after we load a display config because Windows changes them after every reboot :(
                             foreach (ProfileItem profile in _allProfiles)
@@ -1273,7 +1288,10 @@ namespace DisplayMagicianShared
                                 ObjectCreationHandling = ObjectCreationHandling.Replace,
                                 Error = delegate (object sender, Newtonsoft.Json.Serialization.ErrorEventArgs args)
                                 {
-                                    jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message} | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}");
+                                    string innerMsg = args.ErrorContext.Error.InnerException != null
+                                        ? $" | InnerException:{args.ErrorContext.Error.InnerException.Source}:{args.ErrorContext.Error.InnerException.StackTrace} - {args.ErrorContext.Error.InnerException.Message}"
+                                        : "";
+                                    jsonErrors.Add($"JSON.net Error: {args.ErrorContext.Error.Source}:{args.ErrorContext.Error.StackTrace} - {args.ErrorContext.Error.Message}{innerMsg}");
                                     args.ErrorContext.Handled = true;
                                 },
                             };

@@ -255,3 +255,4 @@ HeliosDisplayManagement.Setup/HeliosDisplayManagement.Setup/*
 /UpgradeReport.sarif
 /upgrade-assistant.clef
 /AnalysisReport.sarif
+.omc/

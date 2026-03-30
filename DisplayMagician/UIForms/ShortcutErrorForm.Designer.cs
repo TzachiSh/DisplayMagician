@@ -38,7 +38,7 @@
             // 
             lbl_title.AutoSize = true;
             lbl_title.BackColor = System.Drawing.Color.Black;
-            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_title.ForeColor = System.Drawing.Color.White;
             lbl_title.Location = new System.Drawing.Point(306, 17);
             lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -54,7 +54,7 @@
             btn_save.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_save.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_save.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            btn_save.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             btn_save.ForeColor = System.Drawing.Color.White;
             btn_save.Location = new System.Drawing.Point(397, 459);
             btn_save.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -80,7 +80,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
-            ClientSize = new System.Drawing.Size(933, 519);
+            ClientSize = new System.Drawing.Size(750, 450);
             Controls.Add(txt_errors);
             Controls.Add(btn_save);
             Controls.Add(lbl_title);

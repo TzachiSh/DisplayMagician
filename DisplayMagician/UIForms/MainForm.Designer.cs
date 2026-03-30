@@ -296,10 +296,10 @@
             resources.ApplyResources(this, "$this");
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             Controls.Add(splitContainer1);
-            MaximizeBox = false;
+            MaximizeBox = true;
             Name = "MainForm";
             ShowIcon = false;
-            SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
+            AutoScroll = true;
             Activated += MainForm_Activated;
             Load += MainForm_Load;
             splitContainer1.Panel1.ResumeLayout(false);

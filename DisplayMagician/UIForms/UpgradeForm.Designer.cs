@@ -41,7 +41,7 @@
             // lbl_title
             // 
             lbl_title.AutoSize = true;
-            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_title.ForeColor = System.Drawing.Color.White;
             lbl_title.Location = new System.Drawing.Point(259, 10);
             lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -56,7 +56,7 @@
             btn_upgrade.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_upgrade.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_upgrade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_upgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_upgrade.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_upgrade.ForeColor = System.Drawing.Color.White;
             btn_upgrade.Location = new System.Drawing.Point(214, 390);
             btn_upgrade.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -73,7 +73,7 @@
             btn_remind_later.FlatAppearance.MouseDownBackColor = System.Drawing.Color.IndianRed;
             btn_remind_later.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Brown;
             btn_remind_later.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            btn_remind_later.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F);
+            btn_remind_later.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
             btn_remind_later.ForeColor = System.Drawing.Color.White;
             btn_remind_later.Location = new System.Drawing.Point(523, 390);
             btn_remind_later.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -146,7 +146,7 @@
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
-            ClientSize = new System.Drawing.Size(992, 468);
+            ClientSize = new System.Drawing.Size(800, 400);
             Controls.Add(rtb_message);
             Controls.Add(lnk_changelog);
             Controls.Add(lbl_changelog);

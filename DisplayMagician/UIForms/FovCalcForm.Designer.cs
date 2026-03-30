@@ -513,7 +513,7 @@
             // 
             lbl_results.AutoSize = true;
             lbl_results.BackColor = System.Drawing.Color.Black;
-            lbl_results.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_results.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_results.ForeColor = System.Drawing.Color.White;
             lbl_results.Location = new System.Drawing.Point(203, 14);
             lbl_results.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -536,7 +536,7 @@
             // 
             lbl_title.AutoSize = true;
             lbl_title.BackColor = System.Drawing.Color.Black;
-            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
+            lbl_title.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0);
             lbl_title.ForeColor = System.Drawing.Color.White;
             lbl_title.Location = new System.Drawing.Point(561, 16);
             lbl_title.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
@@ -565,7 +565,7 @@
             BackColor = System.Drawing.Color.Black;
             BackgroundImage = (System.Drawing.Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            ClientSize = new System.Drawing.Size(1518, 888);
+            ClientSize = new System.Drawing.Size(1000, 680);
             Controls.Add(lbl_about_fov);
             Controls.Add(lbl_title);
             Controls.Add(pnl_fov);

@@ -311,7 +311,7 @@
     <value>True</value>
   </data>
   <data name="lbl_create_profile.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="lbl_create_profile.Location" type="System.Drawing.Point, System.Drawing">
     <value>299, 274</value>
@@ -350,7 +350,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_setup_display_profiles.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 21.75pt</value>
+    <value>Microsoft Sans Serif, 16pt</value>
   </data>
   <data name="btn_setup_display_profiles.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 189</value>
@@ -10824,10 +10824,10 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="pb_display_profile.Size" type="System.Drawing.Size, System.Drawing">
-    <value>915, 437</value>
+    <value>400, 250</value>
   </data>
   <data name="pb_display_profile.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="pb_display_profile.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -10863,7 +10863,7 @@
     <value>True</value>
   </data>
   <data name="lbl_create_shortcut.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 12pt</value>
+    <value>Microsoft Sans Serif, 9pt</value>
   </data>
   <data name="lbl_create_shortcut.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -10908,7 +10908,7 @@
     <value>True</value>
   </data>
   <data name="cb_minimise_notification_area.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="cb_minimise_notification_area.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -10947,7 +10947,7 @@
     <value>True</value>
   </data>
   <data name="lbl_version.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 9.75pt</value>
+    <value>Microsoft Sans Serif, 8pt</value>
   </data>
   <data name="lbl_version.Location" type="System.Drawing.Point, System.Drawing">
     <value>9, 418</value>
@@ -10986,7 +10986,7 @@
     <value>Flat</value>
   </data>
   <data name="btn_setup_game_shortcuts.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 21.75pt</value>
+    <value>Microsoft Sans Serif, 16pt</value>
   </data>
   <data name="btn_setup_game_shortcuts.Location" type="System.Drawing.Point, System.Drawing">
     <value>247, 204</value>
@@ -64359,10 +64359,10 @@
     <value>4, 3, 4, 3</value>
   </data>
   <data name="pb_game_shortcut.Size" type="System.Drawing.Size, System.Drawing">
-    <value>915, 440</value>
+    <value>400, 250</value>
   </data>
   <data name="pb_game_shortcut.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+    <value>Zoom</value>
   </data>
   <data name="pb_game_shortcut.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -72347,7 +72347,7 @@
     <value>True</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>915, 878</value>
+    <value>500, 580</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

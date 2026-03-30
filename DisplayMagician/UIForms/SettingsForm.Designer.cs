@@ -548,7 +548,7 @@ namespace DisplayMagician.UIForms
             AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             BackColor = System.Drawing.Color.Black;
-            ClientSize = new System.Drawing.Size(1515, 763);
+            ClientSize = new System.Drawing.Size(1000, 620);
             Controls.Add(gb_support);
             Controls.Add(gb_upgrades);
             Controls.Add(gb_hotkeys);

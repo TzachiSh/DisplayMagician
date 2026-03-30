@@ -86,34 +86,42 @@ namespace DisplayMagician.UIForms
 
                 if (Program.AppProgramSettings.ShowMinimiseMessageInActionCenter)
                 {
-                    // Remind the user that DisplayMagician is running the in background
-                    // Construct the toast content
-                    ToastContentBuilder tcBuilder = new ToastContentBuilder()
-                    .AddText("DisplayMagician is minimised...", hintMaxLines: 1)
-                    .AddText("DisplayMagician will wait in the background until you need it.")
-                    .AddButton(new ToastButton()
-                        .SetContent("Open")
-                        .AddArgument("action", "open")
-                        .SetBackgroundActivation())
-                    .AddButton(new ToastButton()
-                        .SetContent("Exit")
-                        .AddArgument("action", "exit")
-                        .SetBackgroundActivation())
-                    .AddAudio(new Uri("ms-winsoundevent:Notification.Default"), false, true)
-                    .SetToastDuration(ToastDuration.Short);
-                    ToastContent toastContent = tcBuilder.Content;
-                    // Make sure to use Windows.Data.Xml.Dom
-                    var doc = new Windows.Data.Xml.Dom.XmlDocument();
-                    doc.LoadXml(toastContent.GetContent());
+                    try
+                    {
+                        // Remind the user that DisplayMagician is running the in background
+                        // Construct the toast content
+                        ToastContentBuilder tcBuilder = new ToastContentBuilder()
+                        .AddText("DisplayMagician is minimised...", hintMaxLines: 1)
+                        .AddText("DisplayMagician will wait in the background until you need it.")
+                        .AddButton(new ToastButton()
+                            .SetContent("Open")
+                            .AddArgument("action", "open")
+                            .SetBackgroundActivation())
+                        .AddButton(new ToastButton()
+                            .SetContent("Exit")
+                            .AddArgument("action", "exit")
+                            .SetBackgroundActivation())
+                        .AddAudio(new Uri("ms-winsoundevent:Notification.Default"), false, true)
+                        .SetToastDuration(ToastDuration.Short);
+                        ToastContent toastContent = tcBuilder.Content;
+                        // Make sure to use Windows.Data.Xml.Dom
+                        var doc = new Windows.Data.Xml.Dom.XmlDocument();
+                        doc.LoadXml(toastContent.GetContent());
 
-                    // And create the toast notification
-                    var toast = new ToastNotification(doc);
+                        // And create the toast notification
+                        var toast = new ToastNotification(doc);
 
-                    // Remove any other Notifications from us
-                    ToastNotificationManagerCompat.History.Clear();
+                        // Remove any other Notifications from us
+                        ToastNotificationManagerCompat.History.Clear();
 
-                    // And then show it
-                    ToastNotificationManagerCompat.CreateToastNotifier().Show(toast);
+                        // And then show it
+                        ToastNotificationManagerCompat.CreateToastNotifier().Show(toast);
+                    }
+                    catch (Exception ex)
+                    {
+                        // The notification platform may be unavailable on some systems
+                        System.Diagnostics.Debug.WriteLine($"MainForm: Toast notification failed: {ex.Message}");
+                    }
                 }
 
             }
